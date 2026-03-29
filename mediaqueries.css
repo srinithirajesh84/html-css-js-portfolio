@@ -1,96 +1,123 @@
+/* ================== LARGE SCREENS ================== */
 @media screen and (max-width: 1400px){
     #profile{
-        height: 83vh;
-        margin-bottom: 6rem;
+        height: auto;
+        margin-bottom: 3rem;
     }
+
     .about-containers{
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
+
+/* ================== TABLET ================== */
 @media screen and (max-width: 1200px){
+
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav{
         display: flex;
     }
-    #experience,
-    .experience-details-container{
-        margin-top: 2rem;
-    }
+
     #profile,
     .section-container{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+    section{
+        height: auto;
+        margin: 1rem;
+    }
+
+    .section-container{
+        gap: 2rem;
+    }
+
+    .section__pic-container{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .about-containers{
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
     .arrow{
         display: none;
     }
-    section,
-    .section-container{
-        height: fit-content;
-    }
-    section{
-        margin: 0.5%;
-    }
-    .section__pic-container{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    .about-containers{
-        margin-top: 0;
-    }
 }
 
+
+/* ================== MOBILE ================== */
 @media screen and (max-width: 600px){
-    #contact, 
-    footer{
-        height: 40vh;
-    }
-    #profile{
-        height: 83vh;
-        margin-bottom: 0;
-    }
-    article{
-        font-size: 1rem;
-    }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container{
-        flex-wrap: wrap;
-    }
-    .contact-info-container{
+
+    /* General layout fix */
+    section{
+        padding: 10px;
         margin: 0;
     }
-    .contact-info-container p,
-    nav-links li a{
-        font-size: 1.25rem;
+
+    #profile{
+        height: auto;
+        margin-bottom: 1rem;
     }
-    .logo{
-        font-size: 1.5rem;
-    }
+
+    /* Navigation */
     .nav-links{
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
+
+    .nav-links li a{
+        font-size: 1rem;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    /* Text */
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .section__text__p2{
+        font-size: 1rem;
+    }
+
+    article{
+        font-size: 0.9rem;
+    }
+
+    /* Image fix (VERY IMPORTANT) */
     .section__pic-container{
-        width: auto;
-        height: 46vw;
+        width: 100%;
+        height: auto;
+        display: flex;
         justify-content: center;
     }
-    .section__text__p2{
-        font-size: 1.25rem;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
-    .title{
-        font-size: 2rem;
+
+    /* Containers */
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
-    .text-container{
-        text-align: justify;
-    }
-}
