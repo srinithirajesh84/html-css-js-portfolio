@@ -164,9 +164,10 @@ section{
 #profile{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
-    height: 80vh;
-    
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 .picture{
@@ -229,7 +230,10 @@ section{
     height: 2rem;
     
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 /* Buttons */
 
 .btn-container {
@@ -313,7 +317,8 @@ section{
 }
 
 .details-container{
-    width: 250px;   /* fixed width */
+    width: 100%;   /* fixed width */
+    max-width: 300px;
     padding: 1.5rem;
     background: white;
     border-radius: 2rem;
@@ -327,9 +332,10 @@ section{
 }
 
 .section__pic-container{
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
 }
 
 /* EXPERIENCE SECION */
